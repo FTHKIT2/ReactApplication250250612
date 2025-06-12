@@ -7,6 +7,8 @@
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 import {
   ScrollView,
   StatusBar,
@@ -92,6 +94,7 @@ function App(): React.JSX.Element {
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
+            <Icon name="rocket" size={30} color="#900" />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
@@ -125,6 +128,7 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+    color:"red",
   },
 });
 
